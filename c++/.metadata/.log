@@ -1,0 +1,30 @@
+!SESSION 2022-07-05 05:02:21.193 -----------------------------------------------
+eclipse.buildId=4.24.0.I20220607-0700
+java.version=11.0.15
+java.vendor=Private Build
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.ui.ide 4 0 2022-07-05 05:06:56.407
+!MESSAGE Could not import project located at /mnt/823A60AB3A609DC3/Users/Wayne/Desktop/Languages/c++
+!STACK 0
+org.eclipse.ui.internal.wizards.datatransfer.CouldNotImportProjectException: Could not import project located at /mnt/823A60AB3A609DC3/Users/Wayne/Desktop/Languages/c++
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:565)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.run(SmartImportJob.java:252)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Invalid project description.
+	at org.eclipse.core.internal.resources.Project.checkDescription(Project.java:175)
+	at org.eclipse.core.internal.resources.Project.assertCreateRequirements(Project.java:59)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:269)
+	at org.eclipse.core.internal.resources.Project.create(Project.java:255)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.createOrImportProject(SmartImportJob.java:604)
+	at org.eclipse.ui.internal.wizards.datatransfer.SmartImportJob.toExistingOrNewProject(SmartImportJob.java:552)
+	... 2 more
+
+!ENTRY org.eclipse.core.resources 4 77 2022-07-05 05:08:44.060
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2022-07-05 05:08:44.060
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2022-07-05 05:08:44.060
+!MESSAGE /mnt/823A60AB3A609DC3/Users/Wayne/Desktop/Languages/c++ overlaps the workspace location: /mnt/823A60AB3A609DC3/Users/Wayne/Desktop/Languages/c++

@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1584205420 source:c:\users\wayne\desktop\languages\c++\c++\main.cpp
+	<iostream>
+
+1659780931 source:c:\users\wayne\desktop\languages\c++\c++\stl1.cpp
+	<iostream>
+	<vector>
+
+1659782223 source:c:\users\wayne\desktop\languages\c++\c++\stl.cpp
+	<iostream>
+
