@@ -1,17 +1,17 @@
 {
     "configurations": [
         {
-            "name": "C/C++: g++-11 build and debug active file",
+            "name": "C/C++: cpp.exe build and debug active file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}/${fileBasenameNoExtension}",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "/usr/bin",
+            "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            "miDebuggerPath": "\\usr\\bin\\gdb.exe",
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
@@ -24,8 +24,8 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C/C++: g++-11 build active file"
+            "preLaunchTask": "C/C++: cpp.exe build active file"
         }
     ],
-    "version": "2.0.0"
+    "version":"2.0.0"
 }
