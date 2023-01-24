@@ -43,6 +43,4 @@ char *name2 = "JOHN"; // created in heap memory
 
 printf("\n%s", name);
 
-
-
 }
