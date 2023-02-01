@@ -65,8 +65,33 @@ void display(Node* node){
     cout << "NULL"; 
 }
 
+void deleteNode(Node* node , int key){
+
+    /* 1st Case */
+    /* If key is in the first location */
+    Node* temp = node;
+    Node* prev = NULL;
+
+    if(temp != NULL && temp->data == key){
+        node = temp->next;
+    
+    delete temp;
+    return;
+    }
+    else {
+        while(temp != NULL && temp->data != key){
+            prev = temp; 
+            temp = temp->next;
+        }
+        if( temp == NULL){
+            prev->next = temp->next;
+        }
+        delete temp;
+    }
 
 
+
+}
 int main(){
     Node* head = NULL; 
 
@@ -78,6 +103,8 @@ int main(){
     insertAfter(head->next, 8);
     insertAfter(head->next->next, 9);
     append(head, 5);
+    display(head);
+    cout << endl;
     display(head);
 
     return 0; 

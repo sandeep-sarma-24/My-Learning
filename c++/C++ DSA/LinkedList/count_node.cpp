@@ -31,6 +31,15 @@ int getCount(Node* head){
     return count;
 }
 
+int getCountRec(Node* head){
+    if(head == NULL){
+        return 0; 
+    }
+    else {
+        return 1 + getCountRec(head->next);
+    }
+}
+
 
 int main(){
     /* Start with the empty list */
@@ -45,6 +54,7 @@ int main(){
     push(&head, 1);
   
     // Function call
-    cout << "count of nodes is " << getCount(head);
+    cout << "count of nodes is " << getCount(head) << endl;
+    cout << "count of nodes is " << getCountRec(head);
     return 0;
 }
