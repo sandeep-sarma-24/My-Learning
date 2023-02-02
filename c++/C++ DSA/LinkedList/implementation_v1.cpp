@@ -89,9 +89,36 @@ void deleteNode(Node* node , int key){
         delete temp;
     }
 
-
-
 }
+
+void deleteNodeRec(node*& head, int val)
+{
+ 
+    // Check if list is empty or we
+    // reach at the end of the
+    // list.
+    if (head == NULL) {
+        cout << "Element not present in the list\n";
+        return;
+    }
+ 
+    // If current node is the
+    // node to be deleted
+    if (head->info == val) {
+        node* t = head;
+ 
+        // If it's start of the node head
+        // node points to second node
+        head = head->link;
+ 
+        // Else changes previous node's
+        // link to current node's link
+        delete (t);
+        return;
+    }
+    deleteNodeRec(head->link, val);
+}
+
 int main(){
     Node* head = NULL; 
 
