@@ -1,10 +1,24 @@
-console.log("I");
+let stocks = {
+  Fruits : ["strawberry", "grapes", "banana"],
+  liquid : ["water", "soda"],
+  holder : ["cone", "cup", "stick"], 
+  toppings : ["chocolate", "peanuts"]
+}
 
-// This will be shown after 2 seconds
+async function kitchen(){
 
-setTimeout(()=>{
-  console.log("eat");
-},2000)
+  try{
+// Let's create a fake problem      
+     await abc;
+  }
 
-console.log("Ice Cream")
+  catch(error){
+     console.log("abc does not exist", error)
+  }
 
+  finally{
+     console.log("Runs code anyways")
+  }
+}
+
+kitchen()  // run the code
